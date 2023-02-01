@@ -1,0 +1,28 @@
+<a href="/" class="btn btn-info" style="margin-top:5px;">Back</a>
+
+<h3 class="mb-3">Student Login</h3>
+<div class="teachLog">
+  <form method="POST"  class="teachForm border border-info bg-primary bg-opacity-5 mt-5" >
+    <!-- <div class="p-3 mb-2 bg-primary text-white"></div> -->
+   
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Roll no : </label>
+        <input type="number" name="roll" class="form-control" id="exampleInputPassword1" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label ">Date of Birth : </label>
+        <input type="date" name="dob" class="form-control" id="exampleInputPassword1" required>
+      </div>
+      <a><button type="submit" class="btn btn-danger">Submit</button></a>
+    <!-- </div> -->
+  </form>
+  <%   if (error != null)      { %>
+    <div class="border border-info bg-opacity-5 mt-8 ml-4 m alert alert-warning alert-dismissible fade show">
+    
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong><%=  error  %></strong>
+    </div>
+    </div>
+  <% }%>
+
+</div>
